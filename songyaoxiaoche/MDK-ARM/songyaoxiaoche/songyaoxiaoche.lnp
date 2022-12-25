@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"songyaoxiaoche\startup_stm32f103xe.o"
+"songyaoxiaoche\main.o"
+"songyaoxiaoche\gpio.o"
+"songyaoxiaoche\stm32f1xx_it.o"
+"songyaoxiaoche\stm32f1xx_hal_msp.o"
+"songyaoxiaoche\stm32f1xx_hal_gpio_ex.o"
+"songyaoxiaoche\stm32f1xx_hal_tim.o"
+"songyaoxiaoche\stm32f1xx_hal_tim_ex.o"
+"songyaoxiaoche\stm32f1xx_hal.o"
+"songyaoxiaoche\stm32f1xx_hal_rcc.o"
+"songyaoxiaoche\stm32f1xx_hal_rcc_ex.o"
+"songyaoxiaoche\stm32f1xx_hal_gpio.o"
+"songyaoxiaoche\stm32f1xx_hal_dma.o"
+"songyaoxiaoche\stm32f1xx_hal_cortex.o"
+"songyaoxiaoche\stm32f1xx_hal_pwr.o"
+"songyaoxiaoche\stm32f1xx_hal_flash.o"
+"songyaoxiaoche\stm32f1xx_hal_flash_ex.o"
+"songyaoxiaoche\stm32f1xx_hal_exti.o"
+"songyaoxiaoche\system_stm32f1xx.o"
+--strict --scatter "songyaoxiaoche\songyaoxiaoche.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "songyaoxiaoche.map" -o songyaoxiaoche\songyaoxiaoche.axf
