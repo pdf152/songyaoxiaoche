@@ -1,0 +1,39 @@
+/*
+ *  CMSIS Pack Debug Access Sequence Log
+ *  File        : E:\Project\Git\songyaoxiaoche\songyaoxiaoche\MDK-ARM\songyaoxiaoche_Sequences_0000.log
+ *  Created     : 16:15:52 (03/02/2023)
+ *  Device      : STM32F103RC
+ *  PDSC File   : E:/Keil_pack/Keil/STM32F1xx_DFP/2.1.0/Keil.STM32F1xx_DFP.pdsc
+ *  Config File : E:\Project\Git\songyaoxiaoche\songyaoxiaoche\MDK-ARM\DebugConfig\songyaoxiaoche_STM32F103RC.dbgconf
+ *
+ */
+
+[16:15:52.308]  **********  Sequence "DebugCoreStart"  (Context="Connect", Pname="", info="")
+[16:15:52.308]  
+[16:15:52.309]  <debugvars>
+[16:15:52.309]    // Pre-defined
+[16:15:52.309]    __protocol=0x00010002      (Protocol="SWD", SWJ-DP="True")
+[16:15:52.309]    __connection=0x00010202    (Connection Type="Flash", Reset Type="System Reset", Connection Under HW Reset)
+[16:15:52.310]    __dp=0x00000000
+[16:15:52.310]    __ap=0x00000000
+[16:15:52.310]    __traceout=0x00000000      (Trace Disabled)
+[16:15:52.310]    __errorcontrol=0x00000000  (Skip Errors="False")
+[16:15:52.310]    __FlashAddr=0x00000000
+[16:15:52.310]    __FlashLen=0x00000000
+[16:15:52.311]    __FlashArg=0x00000000
+[16:15:52.311]    __FlashOp=0x00000000
+[16:15:52.311]    __Result=0x00000000
+[16:15:52.311]    
+[16:15:52.311]    // User-defined
+[16:15:52.311]    DbgMCU_CR=0x00000007
+[16:15:52.312]  </debugvars>
+[16:15:52.312]  
+[16:15:52.312]  <sequence name="DebugCoreStart" Pname="" disable="false" info="">
+[16:15:52.312]    <block atomic="false" info="">
+[16:15:52.312]      Write32(0xE000EDF0, 0xA05F0001);                                        // Enable Core Debug via DHCSR
+[16:15:52.313]        // -> [Write32(0xE000EDF0, 0xA05F0001)]   (__dp=0x00000000, __ap=0x00000000)
+[16:15:52.314]      Write32(0xE0042004, DbgMCU_CR);                                         // DBGMCU_CR: Configure MCU Debug
+[16:15:52.315]        // -> [Write32(0xE0042004, 0x00000007)]   (__dp=0x00000000, __ap=0x00000000)
+[16:15:52.315]    </block>
+[16:15:52.315]  </sequence>
+[16:15:52.315]  
